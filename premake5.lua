@@ -168,52 +168,6 @@ project "sfml-graphics"
 			"4996"
         }	
 
-project "sfml-main"
-	kind "StaticLib"
-	language "C++"
-
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")	
-
-	includedirs
-	{
-		"include",
-	}	
-
-    filter "configurations:Debug"
-		defines "DEBUG"
-        symbols "On"
-	
-	filter "configurations:Release"
-		defines "NDEBUG"
-		optimize "On"
-
-	filter "configurations:Retail"
-		defines "NDEBUG"
-		optimize "On"
-
-	filter "system:windows"
-		cppdialect "C++17"
-		staticruntime "On"
-		systemversion "latest"
-
-		files
-		{
-			"src/SFML/Main/MainWin32.cpp",
-		}
-
-		disablewarnings
-        {
-			"4068"
-        }
-
-		postbuildcommands
-        {
-            ("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Fortress")
-        }
-
-
-
 project "sfml-network"
 	kind "StaticLib"
 	language "C++"
