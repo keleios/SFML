@@ -34,14 +34,17 @@ project "sfml-system"
 
     filter "configurations:Debug"
 		defines "DEBUG"
+		buildoptions "/MDd"
         symbols "On"
 	
 	filter "configurations:Release"
 		defines "NDEBUG"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Retail"
 		defines "NDEBUG"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "system:windows"
@@ -96,14 +99,17 @@ project "sfml-audio"
 
     filter "configurations:Debug"
 		defines "DEBUG"
+		buildoptions "/MDd"
         symbols "On"
 	
 	filter "configurations:Release"
 		defines "NDEBUG"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Retail"
 		defines "NDEBUG"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "system:windows"
@@ -148,14 +154,17 @@ project "sfml-graphics"
 
     filter "configurations:Debug"
 		defines "DEBUG"
+		buildoptions "/MDd"
         symbols "On"
 	
 	filter "configurations:Release"
 		defines "NDEBUG"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Retail"
 		defines "NDEBUG"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "system:windows"
@@ -200,14 +209,17 @@ project "sfml-network"
 
     filter "configurations:Debug"
 		defines "DEBUG"
+		buildoptions "/MDd"
         symbols "On"
 	
 	filter "configurations:Release"
 		defines "NDEBUG"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Retail"
 		defines "NDEBUG"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "system:windows"
@@ -257,14 +269,17 @@ project "sfml-window"
 
     filter "configurations:Debug"
 		defines "DEBUG"
+		buildoptions "/MDd"
         symbols "On"
 	
 	filter "configurations:Release"
 		defines "NDEBUG"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Retail"
 		defines "NDEBUG"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "system:windows"
