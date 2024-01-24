@@ -88,3 +88,7 @@ ipch/
 # Premake5 Built Files
 *.vcxproj
 *.vcxproj.filters
+*.vcxproj.user
+/.vs
+bin/
+bin-int/
